@@ -89,32 +89,35 @@ const link = 'http://newsapi.org/v2/everything?q=tesla&from=2021-01-18&sortBy=pu
             <View 
               style={{
                 flexDirection:'row',
-                flex:3,
-                justifyContent: "space-around",
+                flex:1,
+                alignItems:'flex-start',
+                flexWrap:'wrap',
+                textAlign:'left',
               }}
             >
               <Text 
                 style={{
-              
-                justifyContent: "center",
-                alignItems:'center',
-                flexWrap:'wrap'
-                 
+                  
+                  // textAlign:'left'
+               
                 }}
               >
                 {u.author}</Text>
               <Text  
                 style={{
-                  justifyContent: "center",
-                  alignItems:'center',
-                  flexWrap:'wrap' 
+                 
+                  // textAlign:'left'
                 }}
               >
                 {u.title}</Text>
             </View>
 
             <View>
-              <Text  >
+              <Text
+                style={{
+                  marginLeft:5
+                }}
+              >
               {(new Date(u.publishedAt)).toLocaleTimeString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })}
             </Text>
             </View>
