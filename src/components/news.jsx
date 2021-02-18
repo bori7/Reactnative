@@ -97,8 +97,9 @@ const link = 'http://newsapi.org/v2/everything?q=tesla&from=2021-01-18&sortBy=pu
             >
               <Text 
                 style={{
-                  
-                  // textAlign:'left'
+                  // fontSize:15,
+                  fontWeight:'bold',
+                  marginBottom:5
                
                 }}
               >
@@ -106,7 +107,7 @@ const link = 'http://newsapi.org/v2/everything?q=tesla&from=2021-01-18&sortBy=pu
               <Text  
                 style={{
                  
-                  // textAlign:'left'
+                  marginTop:5
                 }}
               >
                 {u.title}</Text>
