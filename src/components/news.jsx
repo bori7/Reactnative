@@ -119,7 +119,7 @@ const link = 'http://newsapi.org/v2/everything?q=tesla&from=2021-01-18&sortBy=pu
                   marginLeft:5
                 }}
               >
-              {(new Date(u.publishedAt)).toLocaleTimeString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })}
+              {(new Date(u.publishedAt)).toLocaleTimeString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true }).slice(0,-3)}
             </Text>
             </View>
                 
